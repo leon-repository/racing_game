@@ -2,4 +2,8 @@ asspath
 .project
 .settings/
 /Users/
-
+.idea
+*.ids
+*.iml
+*.ipr
+*.iws
