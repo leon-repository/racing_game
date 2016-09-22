@@ -1,0 +1,353 @@
+body{
+    overflow-x: hidden;
+}
+.car_game{
+    width: 100%;
+    height: 569px;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+}
+.car_game .bg{
+    position: absolute;
+    right: 0;
+    top:0;
+    width:21761px;
+    height:100%;
+}
+.car_game .bg::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 121px;
+    height: 406px;
+    background: url("../images/middle-line.png") no-repeat;
+    right: 90%;
+    top: 137px;
+    margin-right: -60px;
+}
+.car_game  .track-left{
+    float: left;
+    width: 548px;
+    height: 100%;
+    background: url("../images/track_left.jpg") no-repeat;
+}
+.car_game .track-right{
+    float: left;
+    width: 483px;
+    height: 100%;
+    background: url("../images/track_right.jpg") no-repeat;
+}
+.car_game .repeat-bg{
+    float: left;
+    width: 20730px;
+    height: 100%;
+    background: url("../images/track_center.jpg");
+}
+.count{
+    display: none;
+    color:#fff;
+    font-size:30px;
+    position:absolute;
+    top:30%;
+    left:50%;
+    text-align: center;
+    margin-left: -100px;
+    background: rgba(8,97,249,.6);
+    width: 200px;
+    height: 100px;
+    line-height: 80px;
+    background: url("../images/countdown-bg.png") no-repeat;
+    background-size: 100% auto;
+    font-weight: bold;
+}
+.cars{
+    position:
+    absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:300px;
+}
+.car{
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    background-repeat:no-repeat !important;
+    background-position: left 0 !important;
+    background-size: 90px 100% !important;
+}
+.car.fast::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 11px;
+    right: 130px;
+    top: 10px;
+    left:93px;
+    background: url("../images/fire.gif") no-repeat left;
+    background-size: 28px auto;
+
+}
+.car1{background: url(../images/1.png);}
+.car2{background: url(../images/2.png);}
+.car3{background: url(../images/3.png);}
+.car4{background: url(../images/4.png);}
+.car5{background: url(../images/5.png);}
+.car6{background: url(../images/6.png);}
+.car7{background: url(../images/7.png);}
+.car8{background: url(../images/8.png);}
+.car9{background: url(../images/9.png);}
+.car10{background: url(../images/10.png);}
+
+.car1.run{background: url(../images/car1_run.gif);}
+.car2.run{background: url(../images/car2_run.gif);}
+.car3.run{background: url(../images/car3_run.gif);}
+.car4.run{background: url(../images/car4_run.gif);}
+.car5.run{background: url(../images/car5_run.gif);}
+.car6.run{background: url(../images/car6_run.gif);}
+.car7.run{background: url(../images/car7_run.gif);}
+.car8.run{background: url(../images/car8_run.gif);}
+.car9.run{background: url(../images/car9_run.gif);}
+.car10.run{background: url(../images/car10_run.gif);}
+
+.race-sort{
+    height: 60px;
+    background: #1c1f1e;
+    color: #000;
+    text-align: center;
+    line-height: 60px;
+}
+.text_bg{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    margin: 5px;
+    font-size: 14px;
+}
+.text_bg_1{
+    background: #f5f5f5;
+}
+.text_bg_2{
+    background: #f98c15;
+}
+.text_bg_3{
+    background: #28538d;
+}
+.text_bg_4{
+    background: #fbe318;
+}
+.text_bg_5{
+    background: #666;
+}
+.text_bg_6{
+    background: #298649;
+}
+.text_bg_7{
+     background: #a2a3a4;
+}
+.text_bg_8{
+      background: #3cd6e9;
+}
+.text_bg_9{
+    background: #e0393a;
+}
+.text_bg_10{
+    background: #2e34b4;
+}
+
+
+.game_result table th{
+    background: #f5f5f5;
+    height: 40px;
+}
+.game_result table td{
+    height: 32px;
+    text-align: center;
+    border:1px solid #ccc;
+    border-collapse: collapse;
+}
+.game_result table .text_bg{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.last_result {
+    height:70px;
+    background: #1c1f1e;
+}
+.last_result table{
+    border: 1px solid #000;
+    border-radius: 5px;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.last_result table th{
+    line-height: 25px;
+    background: #1a1a1a;
+    font-size: 16px;
+    color: #0054fe;
+}
+.last_result table td{
+    line-height: 25px;
+    font-size: 14px;
+    color: #ffcc02;
+    background: #333;
+    text-align: center;
+    border: 1px solid #000;
+}
+.last_result .table1{
+    width: 20%;
+    float: left;
+    margin-left: 4%;
+}
+.last_result .table2{
+    width: 30%;
+    float: left;
+    margin-left: 4%;
+}
+.last_result .table3{
+    width: 35%;
+    float: left;
+    margin-left: 4%;
+}
+.bgMusicMuted{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #ccc;
+}
+.bgMusicMuted:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.award{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/award_bg.png");
+    z-index: 9999;
+}
+.award .highlight{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    height: 150px;
+    background: url("../images/award_highlight.png") no-repeat center bottom;
+    background-size:100% auto;
+    z-index: 1;
+}
+.award .light{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    height: 600px;
+    background: url("../images/award_light.png") no-repeat center top;
+    background-size:100% auto;
+    z-index: 3;
+}
+.award .award_123{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    height: 100%;
+    z-index: 2;
+}
+.award .award_123 div{
+    background-repeat: no-repeat !important;
+    background-position: center bottom !important;
+}
+.award .award_123 .st1{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: 400px;
+    background-size: 80% auto;
+}
+.award .award_123 .nd2{
+    position: absolute;
+    top: 150px;
+    width: 250px;
+    height: 320px;
+    background-size: 80% auto;
+}
+.award .award_123 .rd3{
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 250px;
+    height: 320px;
+    background-size: 80% auto;
+}
+.car1-big{background: url("../images/car1_big.png");}
+.car2-big{background: url("../images/car2_big.png");}
+.car3-big{background: url("../images/car3_big.png");}
+.car4-big{background: url("../images/car4_big.png");}
+.car5-big{background: url("../images/car5_big.png");}
+.car6-big{background: url("../images/car6_big.png");}
+.car7-big{background: url("../images/car7_big.png");}
+.car8-big{background: url("../images/car8_big.png");}
+.car9-big{background: url("../images/car9_big.png");}
+.car10-big{background: url("../images/car10_big.png");}
+
+.award .award_123 div::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat !important;
+    background-position: center top !important;
+    background-size: 50% auto !important;
+}
+.award .award_123 .st1::after{
+    background: url("../images/1st.png");
+}
+.award .award_123 .nd2::after{
+    background: url("../images/2nd.png");
+}
+.award .award_123 .rd3::after{
+    background: url("../images/3rd.png");
+}
+.award .shahua{
+    width: 100%;
+    height: 100%;
+    background: url("../images/shahua.gif") no-repeat;
+    background-size: 100% 100%;
+}
+.award .flag{
+    position: absolute;
+    right: 100px;
+    top: 0;
+    width: 150px;
+    height: 200px;
+    background: url("../images/flag.png") no-repeat;
+    background-size: 100% auto;
+}
+@keyframes bigger
+ {
+     from {background-size: 80% auto;}
+     to {background-size: 100% auto;}
+ }
+.award .award_123 div {
+    animation: bigger 1.5s;
+    animation-fill-mode: forwards;
+}

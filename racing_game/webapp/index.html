@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>香港赛车PK10</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/race-game.css" rel="stylesheet" type="text/css" />
+</head>
+	<body>
+		<div class="box">
+			<div class="race-sort"></div>
+			<div class="bgMusicMuted open">静音</div>
+			<div class="car_game">
+				<div class="award">
+					<div class="light"></div>
+					<div class="award_123">
+						<div class="st1"></div>
+						<div class="nd2"></div>
+						<div class="rd3"></div>
+						<div class="shahua"></div>
+						<div class="flag"></div>
+					</div>
+					<div class="highlight"></div>
+				</div>
+				<div class="bg">
+					<div class="track-left"></div>
+					<div class="repeat-bg"></div>
+					<div class="track-right"></div>
+				</div>
+				<div class="cars">
+					<div class="car1 car"></div>
+					<div class="car2 car"></div>
+					<div class="car3 car"></div>
+					<div class="car4 car"></div>
+					<div class="car5 car"></div>
+					<div class="car6 car"></div>
+                    <div class="car7 car"></div>
+                    <div class="car8 car"></div>
+                    <div class="car9 car"></div>
+                    <div class="car10 car"></div>
+				</div>
+				<div class="count"></div>
+				<audio id="bgMusic">
+					<source src="media/f1.mp3" type="audio/mp3">
+				</audio>
+				<audio id="countdownMusic">
+					<source src="media/countdown.mp3" type="audio/mp3">
+				</audio>
+				<audio id="awardMusic">
+					<source src="media/award.mp3" type="audio/mp3">
+				</audio>
+			</div>
+			<div class="last_result"></div>
+			<div class="game_result">
+				<table>
+					<thead>
+					<tr>
+						<th width="20%">时间</th>
+						<th width="30%">开奖号码</th>
+						<th width="25%" colspan="3">冠亚军和</th>
+						<th width="25%" colspan="5">1~5龍虎</th>
+					</tr>
+					</thead>
+					<tbody id="raceHistory"></tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/race-game.js"></script>
+    <script src="js/template.js"></script>
+<script id="raceTemp" type="text/html">
+	{{each racingResult}}
+		<span class="text_bg text_bg_{{$value}}">{{$value}}</span>
+	{{/each}}
+</script>
+<script id="lastHistoryTemp" type="text/html">
+	<table class="table1">
+		<tr>
+			<th>期号</th>
+		</tr>
+		<tr>
+			<td>{{racingNum}} {{racingTime}}</td>
+		</tr>
+	</table>
+	<table class="table2">
+		<tr>
+			<th colspan="3">冠亚军和</th>
+		</tr>
+		<tr>
+			<td>{{firstAddSecond}}</td>
+			<td>{{if isFirstSecondBig}}大{{else}}小{{/if}}</td>
+			<td>{{if isFirstSecondOdd}}单{{else}}双{{/if}}</td>
+		</tr>
+	</table>
+	<table class="table3">
+		<tr>
+			<th colspan="5">1~5龍虎</th>
+		</tr>
+		<tr>
+			<td>{{if isFirstUp}}龍{{else}}虎{{/if}}</td>
+			<td>{{if isSecondUp}}龍{{else}}虎{{/if}}</td>
+			<td>{{if isThirdUp}}龍{{else}}虎{{/if}}</td>
+			<td>{{if isFourthUp}}龍{{else}}虎{{/if}}</td>
+			<td>{{if isFifthUp}}龍{{else}}虎{{/if}}</td>
+		</tr>
+	</table>
+</script>
+<script id="raceHistoryTemp" type="text/html">
+	{{each data}}
+		<tr>
+		<td>{{$value.racingNum}} {{$value.racingTime}}</td>
+		<td>
+			{{each $value.racingResult}}
+				<span class="text_bg text_bg_{{$value}}">{{$value}}</span>
+			{{/each}}
+		</td>
+		<td>{{$value.firstAddSecond}}</td>
+		<td>{{if $value.isFirstSecondBig}}大{{else}}小{{/if}}</td>
+		<td>{{if $value.isFirstSecondOdd}}单{{else}}双{{/if}}</td>
+		<td>{{if $value.isFirstUp}}龍{{else}}虎{{/if}}</td>
+		<td>{{if $value.isSecondUp}}龍{{else}}虎{{/if}}</td>
+		<td>{{if $value.isThirdUp}}龍{{else}}虎{{/if}}</td>
+		<td>{{if $value.isFourthUp}}龍{{else}}虎{{/if}}</td>
+		<td>{{if $value.isFifthUp}}龍{{else}}虎{{/if}}</td>
+		</tr>
+	{{/each}}
+</script>
+</html>

@@ -1,0 +1,33 @@
+{
+  "result": "SUCCESS",
+  "data": [
+    {
+      "racingNum" : "201608130002",
+      "racingResult" : [2,7,3,4,5,6,1,8,9,10],
+      "firstAddSecond" : 13,
+      "isFirstSecondOdd" : false,
+      "isFirstSecondBig" : true,
+      "isFirstUp" : false,
+      "isSecondUp" : true,
+      "isThirdUp" : true,
+      "isFourthUp" : false,
+      "isFifthUp" : true,
+      "isLastResult" : true,
+      "racingTime" : "22:13"
+    },{
+    "racingNum" : "201608130001",
+    "racingResult" : [4,9,7,5,10,2,8,3,1,6],
+    "firstAddSecond" : 13,
+    "isFirstSecondOdd" : false,
+    "isFirstSecondBig" : true,
+    "isFirstUp" : false,
+    "isSecondUp" : true,
+    "isThirdUp" : true,
+    "isFourthUp" : false,
+    "isFifthUp" : true,
+    "isLastResult" : true,
+    "racingTime" : "22:08"
+  }
+  ],
+  "message": null
+}

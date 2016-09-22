@@ -1,0 +1,11 @@
+{
+  "result": "SUCCESS",
+  "data": {
+    "isCanStart": true,
+    "racingNum": 20160821001,
+    "racingResult": [2,7,3,4,5,6,1,8,9,10],
+    "startTime": 3000,
+    "serverTime": 0
+  },
+  "message": null
+}

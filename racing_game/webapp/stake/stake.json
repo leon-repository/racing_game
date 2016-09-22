@@ -1,0 +1,15 @@
+{
+  "result" : "SUCCESS",
+  "data" : {
+    "racingNum" : "201608260139",
+    "result" : [ 7, 10, 9, 1, 6, 8, 4, 3, 2, 5 ],
+    "startTime" : 1472213820000,
+    "serverTime" : 1472213633503,
+    "endStakeTime" : 1472213760000,
+    "startModifyTime" : 1472213780000,
+    "endModifyTime" : 1472213800000,
+    "isCanStake" : false,
+    "isCanModifyResult" : true
+  },
+  "message" : null
+}
